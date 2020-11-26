@@ -1,5 +1,7 @@
-import { isAbsoluteURL } from "discourse-common/lib/get-url";
-import getAbsoluteURL from "discourse-common/lib/get-url";
+import {
+  isAbsoluteURL,
+  default as getAbsoluteURL,
+} from "discourse-common/lib/get-url";
 
 export default {
   name: "register-service-worker",

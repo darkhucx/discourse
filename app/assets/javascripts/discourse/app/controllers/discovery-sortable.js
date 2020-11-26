@@ -1,5 +1,4 @@
-import { inject } from "@ember/controller";
-import Controller from "@ember/controller";
+import { inject, default as Controller } from "@ember/controller";
 
 // Just add query params here to have them automatically passed to topic list filters.
 export const queryParams = {
