@@ -56,7 +56,7 @@ export default Component.extend({
   },
 
   @observes("markup")
-  _renderPreview: () => {
+  _renderPreview() {
     discourseDebounce(
       this,
       function () {

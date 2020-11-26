@@ -19,7 +19,7 @@ export default Controller.extend({
   showActions: false,
 
   @observes("filterInput")
-  _setFilter: () => {
+  _setFilter() {
     discourseDebounce(
       this,
       function () {

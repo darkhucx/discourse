@@ -37,7 +37,7 @@ export default Controller.extend({
   },
 
   @observes("nameInput")
-  _setName: function () {
+  _setName() {
     discourseDebounce(
       this,
       function () {

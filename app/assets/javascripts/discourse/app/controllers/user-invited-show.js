@@ -26,7 +26,7 @@ export default Controller.extend({
   },
 
   @observes("searchTerm")
-  _searchTermChanged: () => {
+  _searchTermChanged() {
     discourseDebounce(
       this,
       function () {

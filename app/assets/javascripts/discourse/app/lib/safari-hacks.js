@@ -145,7 +145,7 @@ function positioningWorkaround($fixedElement) {
     positioningWorkaround.blur(evt);
   };
 
-  var blurred = (evt) => {
+  var blurred = function (evt) {
     discourseDebounce(this, blurredNow, evt, INPUT_DELAY);
   };
 
@@ -216,7 +216,7 @@ function positioningWorkaround($fixedElement) {
     }
   }
 
-  const checkForInputs = () => {
+  const checkForInputs = function () {
     discourseDebounce(
       this,
       function () {

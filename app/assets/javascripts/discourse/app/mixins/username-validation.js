@@ -14,7 +14,7 @@ export default Mixin.create({
 
   minUsernameLength: setting("min_username_length"),
 
-  fetchExistingUsername: function () {
+  fetchExistingUsername() {
     discourseDebounce(
       this,
       function () {
@@ -93,7 +93,7 @@ export default Mixin.create({
     );
   },
 
-  checkUsernameAvailability: function () {
+  checkUsernameAvailability() {
     discourseDebounce(
       this,
       function () {

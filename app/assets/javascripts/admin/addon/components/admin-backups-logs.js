@@ -59,7 +59,7 @@ export default Component.extend({
 
   @on("init")
   @observes("logs.[]")
-  _updateFormattedLogs: () => {
+  _updateFormattedLogs() {
     discourseDebounce(this, this._updateFormattedLogsFunc, 150);
   },
 

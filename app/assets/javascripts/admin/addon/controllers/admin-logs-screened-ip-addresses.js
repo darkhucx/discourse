@@ -13,7 +13,7 @@ export default Controller.extend({
   filter: null,
   savedIpAddress: null,
 
-  _debouncedShow: function () {
+  _debouncedShow() {
     this.set("loading", true);
     ScreenedIpAddress.findAll(this.filter).then((result) => {
       this.setProperties({ model: result, loading: false });
@@ -21,7 +21,7 @@ export default Controller.extend({
   },
 
   @observes("filter")
-  show: () => {
+  show() {
     discourseDebounce(this, this._debouncedShow, INPUT_DELAY);
   },
 

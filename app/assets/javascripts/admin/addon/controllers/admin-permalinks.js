@@ -10,7 +10,7 @@ export default Controller.extend({
   loading: false,
   filter: null,
 
-  _debouncedShow: () => {
+  _debouncedShow() {
     Permalink.findAll(this.filter).then((result) => {
       this.set("model", result);
       this.set("loading", false);
@@ -18,7 +18,7 @@ export default Controller.extend({
   },
 
   @observes("filter")
-  show: () => {
+  show() {
     discourseDebounce(this, this._debouncedShow, INPUT_DELAY);
   },
 

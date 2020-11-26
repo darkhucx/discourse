@@ -112,7 +112,7 @@ export default Controller.extend({
   },
 
   @observes("filter", "onlyOverridden", "model")
-  filterContent: function () {
+  filterContent() {
     discourseDebounce(
       this,
       () => {

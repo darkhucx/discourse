@@ -81,7 +81,7 @@ function performSearch(
     });
 }
 
-var debouncedSearch = (
+var debouncedSearch = function (
   term,
   topicId,
   categoryId,
@@ -91,7 +91,7 @@ var debouncedSearch = (
   allowedUsers,
   groupMembersOf,
   resultsFn
-) => {
+) {
   discourseDebounce(
     this,
     performSearch,

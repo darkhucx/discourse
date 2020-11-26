@@ -17,7 +17,7 @@ export default Controller.extend({
   loading: false,
 
   @observes("filterInput")
-  _setFilter: () => {
+  _setFilter() {
     discourseDebounce(
       this,
       function () {

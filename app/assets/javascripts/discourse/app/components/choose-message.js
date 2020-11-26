@@ -30,7 +30,7 @@ export default Component.extend({
     this.set("loading", false);
   },
 
-  search: (title) => {
+  search(title) {
     discourseDebounce(
       this,
       function () {

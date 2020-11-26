@@ -1501,7 +1501,7 @@ export default Controller.extend(bufferedProperty("model"), {
     );
   },
 
-  _scrollToPost: (postNumber) => {
+  _scrollToPost(postNumber) {
     discourseDebounce(
       this,
       function () {

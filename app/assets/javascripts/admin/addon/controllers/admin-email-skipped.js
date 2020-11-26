@@ -5,7 +5,7 @@ import { INPUT_DELAY } from "discourse-common/config/environment";
 
 export default AdminEmailLogsController.extend({
   @observes("filter.{status,user,address,type}")
-  filterEmailLogs: () => {
+  filterEmailLogs() {
     discourseDebounce(this, this.loadLogs, INPUT_DELAY);
   },
 });

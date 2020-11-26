@@ -32,7 +32,7 @@ export default Controller.extend(CanCheckEmails, {
   },
 
   @observes("listFilter")
-  _filterUsers: () => {
+  _filterUsers() {
     discourseDebounce(this, this.resetFilters, INPUT_DELAY);
   },
 

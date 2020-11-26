@@ -48,7 +48,7 @@ export default Controller.extend({
   },
 
   @observes("filter")
-  filterContent: function () {
+  filterContent() {
     discourseDebounce(
       this,
       function () {
